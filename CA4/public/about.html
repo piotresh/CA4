@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Home page</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/demo.css">
+  </head>
+  <body>
+    <!-- Navlist of header -->
+  <div id="navlist">
+    <a onclick="transitionToPage('index.html')" id="logo">Piotr Śmiałek</a>
+    <div id="motto" ">Granite Excellence</div>
+    <div id="navlist-right">
+      <a onclick="transitionToPage('index.html')">Home</a>
+      <a onclick="transitionToPage('chat.html')">Chat App</a>
+      <a onclick="transitionToPage('about.html')" style="color:black">About</a>
+    </div>
+  </div>
+  <div id="content" style="padding-left: 100px; padding-top: 20px; padding-right: 100px;">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>About me</h2>
+    <p>
+
+Born in Krakow and raised in the scenic landscapes of Scotland, I've always been drawn to exploration and creativity. From an early age, I developed a keen interest in technology and the digital world. This fascination led me to pursue a career in programming, where I found my true passion.
+
+My journey into the world of programming began with humble beginnings, working at various coffee shops while honing my skills in coding during my spare time. What started as a hobby soon turned into a full-fledged passion. I discovered the thrill of problem-solving and the satisfaction of bringing ideas to life through code.
+
+Throughout my career, I've had the opportunity to work on diverse projects, each presenting its own set of challenges and learning opportunities. From building interactive websites to developing immersive gaming experiences, I've enjoyed the dynamic and ever-evolving nature of programming.
+
+I find great joy in the process of creating games, where I can combine my technical skills with my love for storytelling and creativity. There's something uniquely rewarding about seeing players immerse themselves in worlds that I've helped to create, sparking their imagination and providing moments of joy and excitement.
+
+In my free time, you can often find me diving into new coding projects, exploring the latest technologies, or simply enjoying a cup of coffee while brainstorming ideas for my next venture. I'm always eager to expand my knowledge and skills, embracing the endless possibilities that the world of programming has to offer.
+
+Join me on this journey of exploration and discovery as we unlock the limitless potential of technology together.</p>
+<p>
+
+Born in Krakow and raised in the scenic landscapes of Scotland, I've always been drawn to exploration and creativity. From an early age, I developed a keen interest in technology and the digital world. This fascination led me to pursue a career in programming, where I found my true passion.
+
+My journey into the world of programming began with humble beginnings, working at various coffee shops while honing my skills in coding during my spare time. What started as a hobby soon turned into a full-fledged passion. I discovered the thrill of problem-solving and the satisfaction of bringing ideas to life through code.
+
+Throughout my career, I've had the opportunity to work on diverse projects, each presenting its own set of challenges and learning opportunities. From building interactive websites to developing immersive gaming experiences, I've enjoyed the dynamic and ever-evolving nature of programming.
+
+I find great joy in the process of creating games, where I can combine my technical skills with my love for storytelling and creativity. There's something uniquely rewarding about seeing players immerse themselves in worlds that I've helped to create, sparking their imagination and providing moments of joy and excitement.
+
+In my free time, you can often find me diving into new coding projects, exploring the latest technologies, or simply enjoying a cup of coffee while brainstorming ideas for my next venture. I'm always eager to expand my knowledge and skills, embracing the endless possibilities that the world of programming has to offer.
+
+Join me on this journey of exploration and discovery as we unlock the limitless potential of technology together.</p>
+<p>
+
+Born in Krakow and raised in the scenic landscapes of Scotland, I've always been drawn to exploration and creativity. From an early age, I developed a keen interest in technology and the digital world. This fascination led me to pursue a career in programming, where I found my true passion.
+
+My journey into the world of programming began with humble beginnings, working at various coffee shops while honing my skills in coding during my spare time. What started as a hobby soon turned into a full-fledged passion. I discovered the thrill of problem-solving and the satisfaction of bringing ideas to life through code.
+
+Throughout my career, I've had the opportunity to work on diverse projects, each presenting its own set of challenges and learning opportunities. From building interactive websites to developing immersive gaming experiences, I've enjoyed the dynamic and ever-evolving nature of programming.
+
+I find great joy in the process of creating games, where I can combine my technical skills with my love for storytelling and creativity. There's something uniquely rewarding about seeing players immerse themselves in worlds that I've helped to create, sparking their imagination and providing moments of joy and excitement.
+
+In my free time, you can often find me diving into new coding projects, exploring the latest technologies, or simply enjoying a cup of coffee while brainstorming ideas for my next venture. I'm always eager to expand my knowledge and skills, embracing the endless possibilities that the world of programming has to offer.
+
+Join me on this journey of exploration and discovery as we unlock the limitless potential of technology together.</p>
+  </div>
+  <script src="js/client.js" async defer></script>
+  </body>
+  <script>
+          // Scrolls down 90px from the top of
+          // the document, to resize the navlist
+          // padding and the title font-size
+          window.onscroll = function() {
+            scrollFunction()
+          };
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 10 ||
+              document.documentElement.scrollTop > 10)
+            {
+              document.getElementById("navlist")
+                    .style.padding = "25px 20px";
+              
+              
+              document.getElementById("logo")
+                    .style.fontSize = "24px";
+            }
+            else {
+              document.getElementById("navlist")
+                    .style.padding = "350px 100px";
+                    
+              document.getElementById("logo")
+                    .style.fontSize = "70px";
+            }
+          }
+
+  window.transitionToPage = function(href) {
+      document.querySelector('body').style.opacity = 0
+      setTimeout(function() { 
+          window.location.href = href
+      }, 500)
+  }
+
+  window.addEventListener("load", (event) => {
+      document.querySelector('body').style.opacity = 1
+  })
+  </script>
+</html>

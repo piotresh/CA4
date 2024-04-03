@@ -1,93 +1,122 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/demo.css">
-    </head>
-    <body>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Home page</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/demo.css">
+  </head>
+  <body>
     <!-- Navlist of header -->
-    <div id="navlist">
-    <a href="#default" id="logo">Piotr Śmiałek</a>
+  <div id="navlist">
+    <a onclick="transitionToPage('index.html')" id="logo">Piotr Śmiałek</a>
     <div id="motto" ">Granite Excellence</div>
-
-        <div id="navlist-right">
-          <a onclick="transitionToPage('index.html')">Home</a>
-          <a onclick="transitionToPage('chat.html')">Chat App</a>
-          <a onclick="transitionToPage('about.html')">About</a>
-        </div>
+    <div id="navlist-right">
+      <a onclick="transitionToPage('index.html')" style="color:black">Home</a>
+      <a onclick="transitionToPage('chat.html')">Chat App</a>
+      <a onclick="transitionToPage('about.html')">About</a>
     </div>
-    <div id="content" style="padding-left: 220px; padding-top: 20px;">
+  </div>
+  <div id="content" style="padding-left: 100px; padding-top: 20px; padding-right: 100px;">
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h2>This is the home page</h2>
+    <p>Welcome to My Portfolio
 
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>        
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-        <p>blank text</p>
-      </div>
-        <script src="js/client.js" async defer></script>
-     
-    
-    </body>
-<script>
-        // Scrolls down 90px from the top of
-        // the document, to resize the navlist
-        // padding and the title font-size
-        window.onscroll = function() {
-        	scrollFunction()
-        };
-        
-        function scrollFunction() {
-        	if (document.body.scrollTop > 10 ||
-        		document.documentElement.scrollTop > 10)
-        	{
-        		document.getElementById("navlist")
-        					.style.padding = "25px 20px";
-            
-        		
-        		document.getElementById("logo")
-        					.style.fontSize = "24px";
-        	}
-        	else {
-        		document.getElementById("navlist")
-        					.style.padding = "350px 100px";
-        					
-        		document.getElementById("logo")
-        					.style.fontSize = "70px";
-        	}
-        }
+Hello and welcome to my portfolio! I'm thrilled to have you here. Allow me to introduce myself and share some of the exciting projects I've been working on.
 
- window.transitionToPage = function(href) {
-    document.querySelector('body').style.opacity = 0
-    setTimeout(function() { 
-        window.location.href = href
-    }, 500)
-}
+About Me
 
-window.addEventListener("load", (event) => {
-    document.querySelector('body').style.opacity = 1
-})
-</script>
+I'm a passionate programmer with a diverse background and a love for creating innovative solutions. Originally from Krakow, Poland, and raised in the picturesque landscapes of Scotland, I've always had a thirst for knowledge and a curiosity for the world around me. My journey into the world of programming began with humble beginnings, and it's been an exhilarating ride ever since.
+
+Projects
+
+One of the highlights of my journey has been the opportunity to work on various projects that showcase my skills and creativity. Here are a couple of projects that I'm particularly proud of:
+
+Tic Tac Toe App:
+Who doesn't love a classic game of Tic Tac Toe? I've developed a sleek and intuitive Tic Tac Toe application that brings this timeless game to life in a digital format. Whether you're playing solo against the computer or challenging a friend to a match, this app promises endless hours of fun and entertainment.
+
+Student Budget App:
+As a former student myself, I understand the importance of managing finances effectively. That's why I created a student budget app designed to help students track their expenses, set financial goals, and stay on top of their budget. With user-friendly features and customizable settings, this app empowers students to take control of their finances and achieve their financial objectives.
+
+Explore More
+
+But that's not all! My portfolio is filled with a variety of other projects, ranging from web applications to mobile games. Feel free to browse through my portfolio to discover more about my work and the exciting projects I've been involved in.
+
+Get in Touch
+
+If you're interested in collaborating on a project, discussing new ideas, or simply saying hello, I'd love to hear from you! Feel free to reach out to me through the contact form on this website, and let's connect.
+
+Thank you for visiting my portfolio, and I hope you enjoy exploring my work!</p>
+<p>Welcome to My Portfolio
+
+Hello and welcome to my portfolio! I'm thrilled to have you here. Allow me to introduce myself and share some of the exciting projects I've been working on.
+
+About Me
+
+I'm a passionate programmer with a diverse background and a love for creating innovative solutions. Originally from Krakow, Poland, and raised in the picturesque landscapes of Scotland, I've always had a thirst for knowledge and a curiosity for the world around me. My journey into the world of programming began with humble beginnings, and it's been an exhilarating ride ever since.
+
+Projects
+
+One of the highlights of my journey has been the opportunity to work on various projects that showcase my skills and creativity. Here are a couple of projects that I'm particularly proud of:
+
+Tic Tac Toe App:
+Who doesn't love a classic game of Tic Tac Toe? I've developed a sleek and intuitive Tic Tac Toe application that brings this timeless game to life in a digital format. Whether you're playing solo against the computer or challenging a friend to a match, this app promises endless hours of fun and entertainment.
+
+Student Budget App:
+As a former student myself, I understand the importance of managing finances effectively. That's why I created a student budget app designed to help students track their expenses, set financial goals, and stay on top of their budget. With user-friendly features and customizable settings, this app empowers students to take control of their finances and achieve their financial objectives.
+
+Explore More
+
+But that's not all! My portfolio is filled with a variety of other projects, ranging from web applications to mobile games. Feel free to browse through my portfolio to discover more about my work and the exciting projects I've been involved in.
+
+Get in Touch
+
+If you're interested in collaborating on a project, discussing new ideas, or simply saying hello, I'd love to hear from you! Feel free to reach out to me through the contact form on this website, and let's connect.
+
+Thank you for visiting my portfolio, and I hope you enjoy exploring my work!</p>
+  </div>
+  <script src="js/client.js" async defer></script>
+  </body>
+  <script>
+          // Scrolls down 90px from the top of
+          // the document, to resize the navlist
+          // padding and the title font-size
+          window.onscroll = function() {
+            scrollFunction()
+          };
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 10 ||
+              document.documentElement.scrollTop > 10)
+            {
+              document.getElementById("navlist")
+                    .style.padding = "25px 20px";
+              
+              
+              document.getElementById("logo")
+                    .style.fontSize = "24px";
+            }
+            else {
+              document.getElementById("navlist")
+                    .style.padding = "350px 100px";
+                    
+              document.getElementById("logo")
+                    .style.fontSize = "70px";
+            }
+          }
+
+  window.transitionToPage = function(href) {
+      document.querySelector('body').style.opacity = 0
+      setTimeout(function() { 
+          window.location.href = href
+      }, 500)
+  }
+
+  window.addEventListener("load", (event) => {
+      document.querySelector('body').style.opacity = 1
+  })
+  </script>
 </html>
-
-
-
-
-
