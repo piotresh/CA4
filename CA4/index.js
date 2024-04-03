@@ -36,10 +36,12 @@ io.on("connection", function (socket) {
     socket.on("chat message", function (data) {
       io.emit("chat message", data);
   });
+
+  //when one client is typing, then send to all
 socket.on("typing", () => {
     socket.broadcast.emit("typing", socket.userId); // Broadcast "typing" event with user information
 });
-
+//when client has stopped typing let everyboy know
 socket.on("stop typing", () => {
     socket.broadcast.emit("stop typing", socket.userId); // Broadcast "stop typing" event with user information
 });
