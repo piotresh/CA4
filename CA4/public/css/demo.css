@@ -45,6 +45,120 @@
   
   /* Style the content */
   .content {
-    margin-left: 200px;
-    padding-left: 20px;
+    margin-left: 185px;
+    padding-left: 40px;
   }
+
+  /* Style the content */
+  .chatapp {
+    margin-left: 20px;
+    padding-left: 40px;
+  }
+
+ <style>
+
+        	
+        body.loaded {
+        opacity: 1;
+        }
+          #navlist #motto {
+        	font-weight: bold;
+          float: left;
+        	color: white;
+        	text-align: center;
+        	padding: 12px;
+        	text-decoration: none;
+        	font-size: 18px;
+        	line-height: 25px;
+        	border-radius: 4px;
+        }
+        /* Navlist designing */
+        #navlist {
+          padding-left: 20px;
+        	overflow: hidden;
+        	background-color: #808080;
+        	padding: 350px 100px;
+        	transition: 0.4s;
+        	position: fixed;
+        	width: 100%;
+        	top: 0;
+        	z-index: 1;
+          background-size: cover;
+          font-weight: bold; /* Make the navlist text bold */
+        }
+
+        #navlistchat {
+        	 width: calc(100% - 200px); /* Adjust width to fill remaining space */
+        }
+
+        
+        #navlist a {
+
+        	float: left;
+        	color: white;
+        	text-align: center;
+        	padding: 12px;
+        	text-decoration: none;
+        	font-size: 18px;
+        	line-height: 25px;
+        	border-radius: 4px;
+        }
+        	
+
+        #navlist #logo {
+          font-family: olive-font, Helvetica;
+        	font-size: 70px;
+        	font-weight: bold;
+        	transition: 0.4s;
+        }
+
+         body {
+          font-family: Helvetica, Arial, sans-serif; /* Helvetica as primary, Arial as fallback */
+        	margin: 0;
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
+        }
+          #chatinterface {
+          padding-left: 20px;}
+        	
+        #navlist a:hover {
+        	color: #000000;
+        }
+        	
+            #navlist-right {
+      float: right;
+      padding: 0;  /* Remove any default padding */
+      margin: 0;   /* Remove any default margin */
+    }
+        
+        /* Content design */
+        .content {
+        	margin-top:220px;
+        	padding:15px 15px 1800px;
+        	font-size:22px;
+        }
+      
+      .inline-element {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+    </style>

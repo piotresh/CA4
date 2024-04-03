@@ -7,17 +7,25 @@
     <link rel="stylesheet" href="/css/demo.css" />
   </head>
   <body>
-    <div class="sidenav">
-        <div class="inbox__people">
-            <h4>Active users</h4>
-          </div>
 
+    <!-- Navlist of header -->
+    <div class="sidenav">
+      <div class="inbox__people">
+          <h4>Active users</h4>
       </div>
-      
-      
-      <br>
-      <hr>
-      <div class="content">
+    </div>
+      <div class="content" >
+    <div id="navlist">    <div id="navlistchat">
+      <a href="#default" id="logo">Piotr Śmiałek</a>
+      <div id="motto" ">Granite Excellence</div>
+
+      <div id="navlist-right">
+        <a onclick="transitionToPage('index.html')">Home</a>
+        <a onclick="transitionToPage('chat.html')">Chat App</a>
+        <a onclick="transitionToPage('about.html')">About</a>
+      </div>
+    </div>    </div>
+    <div class="chatapp">
         <div class="messages__history"></div>
           <div class="fallback"></div>
         <div class="inbox__messages">
@@ -34,8 +42,50 @@
           </form>
           
       </div>
-
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/client.js"></script>
   </body>
+<script>
+        // Scrolls down 90px from the top of
+        // the document, to resize the navlist
+        // padding and the title font-size
+        window.onscroll = function() {
+        	scrollFunction()
+        };
+        
+        function scrollFunction() {
+        	if (document.body.scrollTop > 10 ||
+        		document.documentElement.scrollTop > 10)
+        	{
+        		document.getElementById("navlist")
+        					.style.padding = "25px 20px";
+            
+        		
+        		document.getElementById("logo")
+        					.style.fontSize = "24px";
+        	}
+        	else {
+        		document.getElementById("navlist")
+        					.style.padding = "350px 100px";
+        					
+        		document.getElementById("logo")
+        					.style.fontSize = "70px";
+        	}
+        }
+
+ window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+window.addEventListener("load", (event) => {
+    document.querySelector('body').style.opacity = 1
+})
+</script>
 </html>
+
+
+
+
